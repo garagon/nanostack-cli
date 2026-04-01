@@ -1,0 +1,36 @@
+{
+  "name": "nanostack",
+  "version": "1.0.0",
+  "description": "Install nanostack skills for your AI coding agent",
+  "bin": {
+    "nanostack": "./bin/nanostack.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "ai",
+    "agent",
+    "skills",
+    "claude",
+    "cursor",
+    "codex",
+    "gemini",
+    "engineering",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garagon/nanostack.git",
+    "directory": "cli"
+  },
+  "homepage": "https://nanostack.sh",
+  "author": "Gustavo Aragón",
+  "license": "Apache-2.0"
+}
