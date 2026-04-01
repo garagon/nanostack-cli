@@ -13,7 +13,7 @@
 ## Install
 
 ```bash
-npx nanostack install
+npx create-nanostack
 ```
 
 Detects your AI coding agents, installs everything, runs setup. Then open your agent and type `/nano-run` to configure your project.
@@ -48,9 +48,9 @@ Works with [Claude Code](https://docs.anthropic.com/en/docs/claude-code), [Curso
 ## Commands
 
 ```bash
-npx nanostack install   # detect agents, install skills, run setup
-npx nanostack update    # pull latest version
-npx nanostack doctor    # diagnose installation
+npx create-nanostack   # detect agents, install skills, run setup
+npx create-nanostack update    # pull latest version
+npx create-nanostack doctor    # diagnose installation
 ```
 
 ## Requirements

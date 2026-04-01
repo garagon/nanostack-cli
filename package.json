@@ -1,5 +1,5 @@
 {
-  "name": "nanostack",
+  "name": "create-nanostack",
   "version": "1.0.0",
   "description": "Install nanostack skills for your AI coding agent",
   "bin": {
