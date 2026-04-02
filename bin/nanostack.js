@@ -25,7 +25,7 @@ const REPO_URL = 'https://github.com/garagon/nanostack.git';
 const REPO_OWNER = 'garagon';
 const REPO_NAME = 'nanostack';
 const HOME = os.homedir();
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 // Files that must exist in a valid nanostack clone
 const EXPECTED_FILES = ['SKILL.md', 'setup', 'ZEN.md', 'bin/save-artifact.sh'];
@@ -52,8 +52,8 @@ const AGENT_DEFS = [
     name: 'Cursor',
     host: 'cursor',
     detect: () => commandExists('cursor') || existsSync(join(HOME, '.cursor')),
-    skillsDir: () => null,
-    installPath: () => null,
+    skillsDir: () => join(HOME, '.claude', 'skills'),
+    installPath: () => join(HOME, '.claude', 'skills', REPO_NAME),
   },
   {
     name: 'OpenCode',
@@ -66,8 +66,8 @@ const AGENT_DEFS = [
     name: 'Gemini CLI',
     host: 'gemini',
     detect: () => commandExists('gemini'),
-    skillsDir: () => null,
-    installPath: () => null,
+    skillsDir: () => join(HOME, '.claude', 'skills'),
+    installPath: () => join(HOME, '.claude', 'skills', REPO_NAME),
   },
 ];
 
